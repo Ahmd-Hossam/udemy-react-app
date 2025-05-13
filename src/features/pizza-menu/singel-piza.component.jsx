@@ -10,6 +10,8 @@ function SinglePizza(props) {
     width: "100%",
     height: "200px",
   };
+
+  if (props.item.name === "Potato Crunch") return null;
   return (
     <div className="single" style={pizzaStyle}>
       <div className="image-container" style={imageContainrStyle}>

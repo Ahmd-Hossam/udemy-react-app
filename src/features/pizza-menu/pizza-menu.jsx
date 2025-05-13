@@ -55,11 +55,14 @@ function Pizza() {
     },
   ];
 
+  const numOfPizzass = pizzass.length;
   return (
     <div style={pizzasStyle}>
-      {pizzass.map((ele, index) => (
-        <SinglePizza key={index} item={ele} />
-      ))}
+      {numOfPizzass > 0 ? (
+        pizzass.map((ele, index) => <SinglePizza key={index} item={ele} />)
+      ) : (
+        <p> no data aviliable</p>
+      )}
     </div>
   );
 }
