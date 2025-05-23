@@ -5,7 +5,10 @@ const UserContext = createContext();
 
 // constractor
 export function UserProvider({ children }) {
-  const [user, setUser] = useState({ name: "Ahmed" });
+  const [user, setUser] = useState({
+    name: "Ahmed Hossam",
+    img: "https://img.freepik.com/premium-vector/avatar-icon0002_750950-43.jpg",
+  });
 
   return (
     <UserContext.Provider value={{ user, setUser }}>

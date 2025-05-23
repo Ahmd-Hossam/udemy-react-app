@@ -1,4 +1,4 @@
-function Product(props) {
+function Product({ img, name, description, id }) {
   return (
     <div
       style={{
@@ -9,14 +9,14 @@ function Product(props) {
     >
       <img
         style={{ height: "200px", width: "100%" }}
-        src={props.product.img}
+        src={img}
         alt="product image"
       />
       <div style={{ padding: "1rem" }}>
         <h2>
-          {props.product.name} {props.id + 1}
+          {name} {id + 1}
         </h2>
-        <p>{props.product.description}</p>
+        <p>{description}</p>
       </div>
     </div>
   );

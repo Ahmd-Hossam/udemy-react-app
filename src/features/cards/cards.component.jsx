@@ -31,7 +31,14 @@ function Cards() {
       }}
     >
       {productsData.map((ele, index) => {
-        return <Product product={ele} id={index} />;
+        return (
+          <Product
+            img={ele.img}
+            name={ele.name}
+            description={ele.descripion}
+            id={index}
+          />
+        );
       })}
     </div>
   );
