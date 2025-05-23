@@ -5,7 +5,8 @@ function Navbar() {
     <nav>
       <Link to="/">Advicess</Link>| <Link to="/cards">Cards</Link>|{" "}
       <Link to="/custome-provider">Custom Provider and Hook</Link> |{" "}
-      <Link to="/pizza-menu">Pizza</Link>
+      <Link to="/pizza-menu">Pizza</Link> |{" "}
+      <Link to="/todo-list">ToDo List</Link>
     </nav>
   );
 }
