@@ -9,6 +9,7 @@ import Pizza from "./features/pizza-menu/pizza-menu";
 import FlashCards from "./features/flash-cards/flash-cards.component";
 import Steps from "./features/steps/steps.component";
 import ToDoList from "./features/todo-list/todo-list.component";
+import Movies from "./features/movies-app/movies.component";
 function App() {
   return (
     <BrowserRouter>
@@ -23,6 +24,7 @@ function App() {
           <Route path="/flash-cards" element={<FlashCards />} />
           <Route path="/steps" element={<Steps />} />
           <Route path="/todo" element={<ToDoList />} />
+          <Route path="/movies" element={<Movies />} />
         </Routes>
       </UserProvider>
     </BrowserRouter>
