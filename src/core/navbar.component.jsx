@@ -8,7 +8,8 @@ function Navbar() {
       <Link to="/pizza-menu">Pizza</Link> |{" "}
       <Link to="/flash-cards">Flash Cards</Link> |{" "}
       <Link to="/steps">Steps</Link>| <Link to="/todo"> ToDo List</Link>|{" "}
-      <Link to="/movies"> Movies </Link>
+      <Link to="/movies"> Movies </Link> |
+      <Link to="/todo-advanced"> ToDo Advanced </Link>
     </nav>
   );
 }

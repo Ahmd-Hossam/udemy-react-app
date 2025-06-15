@@ -10,6 +10,7 @@ import FlashCards from "./features/flash-cards/flash-cards.component";
 import Steps from "./features/steps/steps.component";
 import ToDoList from "./features/todo-list/todo-list.component";
 import Movies from "./features/movies-app/movies.component";
+import ToDoAdvanced from "./features/todo-list-advanced/todo-advanced-list";
 function App() {
   return (
     <BrowserRouter>
@@ -25,6 +26,7 @@ function App() {
           <Route path="/steps" element={<Steps />} />
           <Route path="/todo" element={<ToDoList />} />
           <Route path="/movies" element={<Movies />} />
+          <Route path="/todo-advanced" element={<ToDoAdvanced />} />
         </Routes>
       </UserProvider>
     </BrowserRouter>
